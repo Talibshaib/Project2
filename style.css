@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: skyblue;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 0.4rem;
+  width: 400px;
+  height: 700px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 1px 6px 10px rgba(0, 5, 6, 0.3);
+}
+.display {
+  width: 400px;
+  height: 200px;
+}
+.button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+.button button {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button button:not(.color-blue, .color-light) {
+  background-color: white;
+}
+.color-blue {
+  background-color: rgb(75, 197, 246);
+  color: white;
+}
+.color-light {
+  background-color: rgb(199, 231, 244);
+  color: rgb(2, 66, 92);
+}
